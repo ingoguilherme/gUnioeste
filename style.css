@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #C8F7C5;
+}
+
+.map{
+    margin-bottom: 30px;
+}
+
+.navbar{
+    margin-bottom: 0px!important;
+}
+
+.col-sm-5{
+    display: table;
+    margin-bot: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 20;
+    box-shadow: 2px 1px 1px;
+}
+
+.chart{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
