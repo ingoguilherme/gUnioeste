@@ -3,6 +3,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     background: #C8F7C5;
+    margin: 0px;
+    padding: 0px;
 }
 
 .map{
@@ -13,18 +15,22 @@ body{
     margin-bottom: 0px!important;
 }
 
-.col-sm-5{
-    display: table;
-    margin-bot: 30px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin: 20;
-    box-shadow: 2px 1px 1px;
+.row {
+	margin: 0px !important;;
+}
+
+.col-sm-6 {
+	margin: 0px !important;
+	padding: 0px !important;
 }
 
 .chart{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-
+    display: table;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 2px 1px 1px;
 }
