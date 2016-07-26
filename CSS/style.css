@@ -2,13 +2,18 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: #C8F7C5;
     margin: 0px;
     padding: 0px;
 }
 
 .map{
     margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.space {
+	height: 50px;
+	width: 100%;
 }
 
 .navbar{
@@ -16,7 +21,7 @@ body{
 }
 
 .row {
-	margin: 0px !important;;
+	margin: 0px !important;
 }
 
 .col-sm-6 {
@@ -29,8 +34,8 @@ body{
     text-align: center;
     vertical-align: middle;
     display: table;
-    margin: 10px;
-    border: 1px solid #ccc;
+    margin: 10px ;
+    border: 1px solid #e1e1e1;
     border-radius: 3px;
     box-shadow: 2px 1px 1px;
 }
