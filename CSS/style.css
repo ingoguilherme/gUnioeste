@@ -35,5 +35,10 @@ body{
     padding: auto;
     margin: auto;
     text-align: center;
+    margin-top: 20px;
+}
+
+.charts-body {
+    margin-bottom: 80px;
 }
 
