@@ -6,9 +6,9 @@ body{
     padding: 0px;
 
     /*Width mínima*/
-    /*min-width:640px; /* suppose you want minimun width of 1000px */
-    /*width: auto !important;  /* Firefox will set width as auto */
-    /*width:640px; /**/
+    min-width:640px; /* suppose you want minimun width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:640px; /**/
 }
 
 .navbar{
@@ -16,10 +16,8 @@ body{
 }
 
 .chart{
-    margin: 10px;
-    border: 1px solid #e1e1e1;
-    border-radius: 3px;
-    box-shadow: 2px 1px 1px;
+    width: 550px;
+    height: 400px;
 }
 
 .row {
