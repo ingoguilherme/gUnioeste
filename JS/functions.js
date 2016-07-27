@@ -2,7 +2,7 @@ function loadChartsOnMenu(){
 	var ulCharts_cece = $("#graficos_cece");
 	var ulCharts_ccsa = $("#graficos_ccsa");
 	var ulCharts_cel = $("#graficos_cel");
-	var ulCharts_cel = $("#graficos_geral");
+	var ulCharts_geral = $("#graficos_geral");
 
 	$(".chart_cece").each(function(){
 		var idChart = "" + $(this).attr("id");
