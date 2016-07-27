@@ -18,3 +18,8 @@ function loadChartsOnMenu(){
 	});
 	
 }
+
+function adjustGoogleFormHeight(){
+	var h = $("#google_form").height();
+    $("#google_form").height(h - 51);
+}

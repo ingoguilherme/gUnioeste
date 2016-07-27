@@ -1,4 +1,4 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <html>
     <head>
@@ -23,7 +23,7 @@
         <script src="JS/functions.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -37,112 +37,14 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="charts.html">Gráficos</a></li>
                 <li><a href="new_student.html">Adicionar aluno</a></li>
-                <li><a href="contact.html">Contato</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#mapa">Mapa</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gráficos <span class="caret"></span></a>
-                  <ul id="graficos" class="dropdown-menu">
-                  </ul>
-                </li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
         </nav>
 
-        <div class="space"></div>
-
-        <div id="mapa">
-            <div class="map" data-type="AwesomeTableView" data-viewID="-KNY9thrFYlST42XwJMO"></div>
-        </div>
-
-        <div class="table table-charts">
-            <div class="row">
-                <div id="g_alunos_curso" name="Alunos por curso" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1524456239&amp;format=interactive"></iframe>
-                </div>
-               <div id="g_alunos_periodo" name="Alunos por período" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=405647856&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_desistentes_curso" name="Alunos desistentes por curso" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=350608618&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_centro" name="Alunos por centro" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=992786960&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_computacao" name="Alunos por ano - Ciência da Computação" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1411779048&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_formados_curso" name="Alunos formados por curso" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=892744896&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_enfermagem" name="Alunos por ano - Enfermagem"class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=2108386217&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_situacao" name="Alunos por situação" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=746066216&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_hotelaria" name="Alunos por ano - Hotelaria" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=460163877&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_situacao_turismo" name="Alunos por situação - Turismo" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1399358212&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_mecanica" name="Alunos por ano - Engenharia Mecânica" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=84190106&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_ano_eletrica" name="Alunos por ano - Engenharia Elétrica" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=233748193&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_matematica" name="Alunos por ano - Matemática" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1398805301&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_ano_direito" name="Alunos por ano - Direito" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1123457030&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_contabeis" name="Alunos por ano - Ciências Contábeis" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=92554385&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_ano_turismo" name="Alunos por ano - Turismo" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=2023618504&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_letras" name="Alunos por ano - Letras" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1651874229&amp;format=interactive"></iframe>
-                </div>
-                <div id="g_alunos_ano_administracao" name="Alunos por ano - Administração" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1552961719&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div id="g_alunos_ano_pedagogia" name="Alunos por ano - Pedagogia" class="col-sm-6 menu_chart">
-                    <iframe class="chart" width="600" height="400" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1CAnaTNspV7kxfXx8CtJwTC4ZBC7hq6kCi8vjXisi2Lw/pubchart?oid=1091716112&amp;format=interactive"></iframe>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            $( document ).ready(function() {
-                loadChartsOnMenu();
-            });
-        </script>
+        <div data-type="AwesomeTableView" data-viewID="-KNY9thrFYlST42XwJMO"></div>
 
     </body>
 </html>
