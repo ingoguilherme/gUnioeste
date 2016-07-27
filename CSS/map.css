@@ -1,3 +1,40 @@
-#googleMap {
-    height: 100% !important;
+.map_div{
+    margin: 0px !important;
+    text-align: center !important;
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    display: inline-block !important;
+}
+
+.map {
+    display: inline-block !important;
+    height: 828px;
+    border: 0px;
+    width: 100%;
+}
+
+.mdl-shadow--4dp {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+    margin: 20px;
+    padding: 20px;
+}
+
+.mdl-card {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 200px;
+    overflow: hidden;
+    width: 330px;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
 }

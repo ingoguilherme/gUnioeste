@@ -6,9 +6,9 @@ body{
     padding: 0px;
 
     /*Width mínima*/
-    min-width:640px; /* suppose you want minimun width of 1000px */
-    width: auto !important;  /* Firefox will set width as auto */
-    width:640px; 
+    /*min-width:640px; /* suppose you want minimun width of 1000px */
+    /*width: auto !important;  /* Firefox will set width as auto */
+    /*width:640px; /**/
 }
 
 .navbar{
