@@ -20,7 +20,7 @@
         <script src="JS/functions.js"></script>
     </head>
     <body class="charts-body">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav id="topo" class="navbar navbar-default navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,7 +42,6 @@
           </div>
         </nav>
 
-
         <nav class="navbar navbar-inverse navbar-fixed-bottom navbar-charts">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -56,6 +55,7 @@
           </div>
           <div id="navbar-charts" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+              <li><a href="#topo">Topo</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CECE<span class="caret"></span></a>
                 <ul id="graficos_cece" class="dropdown-menu">
@@ -161,6 +161,12 @@
         <script>
             $( document ).ready(function() {
                 loadChartsOnMenu();
+            });
+
+            $(document).on('click','.navbar-collapse.in',function(e) {
+                if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                    $(this).collapse('hide');
+                }
             });
         </script>
 
