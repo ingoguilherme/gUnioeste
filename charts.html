@@ -18,6 +18,8 @@
 
         <!-- My JS -->
         <script src="JS/functions.js"></script>
+        <script src="JS/jquery.bootstrap-autohidingnavbar.js"></script>
+        
     </head>
     <body class="charts-body">
         <nav id="topo" class="navbar navbar-default navbar-static-top">
@@ -42,10 +44,10 @@
           </div>
         </nav>
 
-        <nav class="navbar navbar-inverse navbar-fixed-bottom navbar-charts">
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-charts" aria-expanded="false" aria-controls="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-charts" aria-expanded="false" aria-controls="navbar-charts">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -74,6 +76,7 @@
               
             </ul>
           </div><!--/.nav-collapse -->
+          
         </div><!--/.container-fluid -->
       </nav>
 
@@ -161,13 +164,17 @@
         <script>
             $( document ).ready(function() {
                 loadChartsOnMenu();
+                $(".navbar-fixed-bottom").autoHidingNavbar('setDisableAutohide', true);
+                $('.navbar-fixed-bottom').autoHidingNavbar('show');
             });
 
+            
             $(document).on('click','.navbar-collapse.in',function(e) {
                 if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
                     $(this).collapse('hide');
                 }
             });
+            
         </script>
 
     </body>
